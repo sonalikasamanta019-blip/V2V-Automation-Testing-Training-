@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form </title>
+        <style>
+            body{
+                background: linear-gradient(70deg ,rgb(123, 172, 247) , pink);
+            }
+
+            .form-container{
+                display: flex;
+                flex-direction: row;
+                gap: 50px;
+                width: 800px;
+                margin: 50px auto;
+                background-color: rgb(237, 139, 139);
+                border-radius: 5px;
+                box-shadow: 0 4px 10px rgb(31, 29, 29);
+            }
+            img{
+                opacity: 60%;
+            }
+            form{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 16px;
+            }
+            input{
+                width: 250px;
+                margin-top: 10px;
+            }
+
+            button{
+                background-color: brown;
+                color: white;
+                padding: 8px 15px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-left: 160px;
+                margin-top: 8px;
+            }
+
+            button:hover{
+                background-color: rgb(62, 6, 6);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <img src="photo.webp" height="500px" width="300px">
+            <div class="form">
+                <form>
+                    <h2 style="padding-left: 80px;">Registration Form</h2>
+                    Name: <input type="text" placeholder="Full Name" required style="margin-left:50px">
+                    <br>
+                    Date Of Birth: <input type="date" name="dob" style="width: 200px;">
+                    <br>
+                    Mobile no.: <input type="text" name="mob" style="margin-left:23px">
+                    <br>
+                    Email-id: <input type="email" placeholder="sonalika@capgemini.com" required style="margin-left: 40px;">
+                    <br>
+                    Password: <input type="text" name="pass" style="margin-left:30px">
+                    <br>
+                    Gender:
+                    <input type = "radio" name="Gender" value="Male" style="width: 15px;margin-left:40px;">Male
+                    <input type = "radio" name="Gender" value="Female" style="width: 15px;">Female
+                    <br>
+                    Department: <input type="checkbox" name="cse" style="width: 12px; margin-left: 10px;"><label for="a" >CSE</label>
+                        <input type="checkbox" name="IT" style="width: 12px; margin-left: 10px;"><label for="b">IT</label>
+                        <input type="checkbox" name="ece" style="width: 12px; margin-left: 10px;"><label for="c">ECE</label>
+                        <input type="checkbox" name="civil" style="width: 12px; margin-left: 10px;"><label for="d">Civil</label>
+                        <input type="checkbox" name="mech" style="width: 12px; margin-left: 10px;"><label for="e">Mech</label>
+                    <br><br>
+                    State: <select name="state" style="margin-left: 60px;">
+                        <option value="a">--Select--</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                    <br>
+                    City: <input type="text" name="city" style="margin-left: 65px;">
+                    <br><br>
+                    Address: <textarea rows="3" style="width: 300px; margin-left: 40px;"></textarea>
+                    <br>
+                    Student Photo: <input type="file" style="margin-left: 30px;">
+                    
+                    <button type="submit">Send</button>
+
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
