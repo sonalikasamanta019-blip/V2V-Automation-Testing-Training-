@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE allstudents SYSTEM "external.dtd">
+<allstudents>
+<student>
+<name>My name is<firstname>Sonalika</firstname><lastname>Samanta</lastname></name>
+<email>sona@capgemini.com</email>
+<contact>999999</contact>
+<address type="office">pune</address>
+</student>
+
+<student>
+<name>abhi</name>
+<email>abhi@capgemini.com</email>
+<contact>999999</contact>
+<address type="office">pune</address>
+<address type="home">pune</address>
+</student>
+</allstudents>

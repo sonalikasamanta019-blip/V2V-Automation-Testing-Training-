@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE studentdetails[
+<!ELEMENT studentdetails (name,course,year,activity,contact)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT course (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT activity (#PCDATA)>
+<!ELEMENT contact (#PCDATA)>
+]>
+
+<studentdetails>
+<name>Ajay</name>
+<course>Java</course>
+<year>2025</year>
+<activity>presentation</activity>
+<contact>999999</contact>
+</studentdetails>

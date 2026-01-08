@@ -1,0 +1,10 @@
+
+<!ELEMENT allstudents (student*)>
+<!ELEMENT student (name,email,contact,address*)>
+<!ELEMENT name (#PCDATA|firstname|lastname)*>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT contact (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST address type CDATA #REQUIRED>
