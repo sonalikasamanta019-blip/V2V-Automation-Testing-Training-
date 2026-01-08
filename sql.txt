@@ -1,0 +1,24 @@
+create table student(stuid int, firstname varchar(255), lastname varchar(255), address varchar(255));
+insert into student (stuid,firstname,lastname,address)values(1,'sonalika','samanta','pune');
+insert into student (stuid,firstname,lastname,address)values(2,'pooja','singh','mumbai'),(3,'shriya','dey','pune'),(4,'sampriti','dey','thane');
+
+select * from student;
+
+update student set lastname='daal' where firstname='sampriti';
+
+delete from student where stuid=4;
+
+alter table student add marks int;
+
+select * from student;
+
+update student set marks='70' where stuid=1;
+update student set marks='85' where stuid=2;
+update student set marks='80' where stuid=3;
+
+select max(marks) from student;
+select min(marks) from student;
+
+select * from student where marks>=80;
+
+select * from student order by marks desc;
