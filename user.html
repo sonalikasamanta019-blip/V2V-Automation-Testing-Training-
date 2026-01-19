@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" href="user.css">
+    </head>
+    <body> 
+       
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="enter your name">
+            <br><br>
+            <button type="submit" id="button">Submit</button>
+        </form>
+        <div class="user-details">
+            <h3>User Details</h3>
+            <h2 id="name1" style="color: blue;"></h2>
+        </div>
+
+        <div>
+            <select id="mycolors">
+                <option value="select">--Select option--</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+            </select>
+        </div>
+
+        <div id="box"></div>
+
+        <div>
+            <label for="country">Select a country</label>
+            <select id="country" onchange="handleChange()">
+                <option value="select">--Select option--</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="india">India</option>
+                <option value="china">China</option>
+            </select>
+            <h2 id="name2"></h2>
+        </div>
+        <script src="user.js"></script>
+        
+    </body>
+</html>
